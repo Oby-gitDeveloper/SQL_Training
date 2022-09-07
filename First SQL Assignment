@@ -1,0 +1,10 @@
+SELECT * FROM Purchasing.PurchaseOrderHeader 
+--4,012 rows were returned showing 13 columns (plus serial number making it 14 cloumns)
+
+SELECT VendorID, OrderDate FROM Purchasing.PurchaseOrderHeader
+--8,024 rows were returned showing only VendorID and OrderDate columns alone (the serial number were also shown to depict orderliness)
+
+SELECT * FROM Purchasing.PurchaseOrderHeader
+WHERE Status=4
+ORDER BY OrderDate DESC
+--3,689 rows were filtered from Line 1 command, showing the entities with '4' as their status; the Order date were presented in descending order (with the most recent order at the top of the table)
