@@ -1,5 +1,9 @@
+
+## FIRST SQL ASSIGNMENT
+
 SELECT * FROM Purchasing.PurchaseOrderHeader 
 --4,012 rows were returned showing 13 columns (plus serial number making it 14 cloumns)
+
 
 SELECT VendorID, OrderDate FROM Purchasing.PurchaseOrderHeader
 --8,024 rows were returned showing only VendorID and OrderDate columns alone (the serial number were also shown to depict orderliness)
